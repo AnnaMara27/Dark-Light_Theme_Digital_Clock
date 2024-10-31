@@ -1,16 +1,124 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap");
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
+  --dark-color-one: #1b1b1b;
+  --dark-color-two: #2d4354;
+  --light-color-one: #d3c3b9;
+  --light-color-two: #a79e9c;
+  --accent-one: #b58863;
+  --accent-two: #3d4d55;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Orbitron", sans-serif;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  background-color: var(--light-color-two);
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  position: relative;
+}
+
+.date-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: var(--dark-color-one);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.6;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.date-container small {
+  font-size: 24px;
+}
+
+.theme-icons {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  cursor: pointer;
+}
+
+.fa-regular {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  font-size: 22px;
+  height: 40px;
+  width: 40px;
+}
+
+.fa-moon {
+  background-color: var(--accent-two);
+  color: var(--light-color-one);
+}
+
+.hidden {
+  display: none;
+  /* pointer-events: none; */
+}
+
+.clock-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-color-one);
+  border-radius: 10px;
+  box-shadow: 0 2px 3px rgba(88, 102, 115, 0.711);
+  height: 300px;
+  max-width: 500px;
+  width: 90%;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.pm-am {
+  color: var(--accent-two);
+  font-size: 22px;
+  font-weight: 900;
+  position: absolute;
+  right: 40px;
+  top: 80px;
+}
+
+.clock-digits {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  height: 120px;
+  width: 120px;
+  padding: 15px;
+}
+
+.clock-digits p {
+  color: var(--dark-color-one);
+  font-size: 52px;
+  font-weight: 700;
+}
+
+.clock-digits small {
+  color: var(--dark-color-two);
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.colon {
+  color: var(--accent-one);
+  font-size: 32px;
+  font-weight: 900;
+  padding: 0 5px;
 }

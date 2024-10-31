@@ -9,31 +9,39 @@
     <title>Digital_Clock</title>
   </head>
   <body>
-    <div class="container">
-      <div class="icons">
-        <i class="fa-regular fa-sun"></i>
-        <i class="fa-regular fa-moon"></i>
+    <div class="theme-icons">
+      <i class="fa-regular fa-sun hidden"></i>
+      <i class="fa-regular fa-moon"></i>
+    </div>
+    <div class="date-container">
+      <p class="day" id="day">Thu</p>
+      <p class="month" id="month">Oct<small class="date" id="date"> 31</small></p>
+    </div>
+    <div class="clock-container">
+      <div class="pm-am" id="pm-am">
+        <p>PM</p>
       </div>
 
-      <div class="clock-hours" id="clock-hours">
+      <div class="clock-digits clock-hours" id="clock-hours">
         <p class="hours" id="hours">3</p>
         <small>Hours</small>
       </div>
       <div class="colon">
         <p>:</p>
       </div>
-      <div class="clock-minutes" id="clock-minutes">
+      <div class="clock-digits clock-minutes" id="clock-minutes">
         <p class="minutes" id="minutes">27</p>
-        <small>Hours</small>
+        <small>Minutes</small>
       </div>
       <div class="colon">
         <p>:</p>
       </div>
-      <div class="clock-seconds" id="clock-seconds">
+      <div class="clock-digits clock-seconds" id="clock-seconds">
         <p class="seconds" id="seconds">15</p>
-        <small>Hours</small>
+        <small>Seconds</small>
       </div>
     </div>
+
     <script src="script.js"></script>
   </body>
 </html>
