@@ -28,10 +28,10 @@ function updateClock() {
   const seconds = now.getSeconds();
 
   // Setting the day and the date
-  const weekdays = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"];
+  const weekdays = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
   const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
-  dayEl.innerText = weekdays[day - 1];
+  dayEl.innerText = weekdays[day];
   monthEl.innerText = `${months[month]} ${date}`;
 
   // Displaying the time
