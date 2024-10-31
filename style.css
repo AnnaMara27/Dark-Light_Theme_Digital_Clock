@@ -25,22 +25,8 @@ body {
   position: relative;
 }
 
-.date-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 5px;
-  color: var(--dark-color-one);
-  font-size: 24px;
-  font-weight: 500;
-  line-height: 1.6;
-  position: absolute;
-  top: 30px;
-  right: 30px;
-}
-
-.date-container small {
-  font-size: 24px;
+body.dark {
+  background-color: var(--dark-color-one);
 }
 
 .theme-icons {
@@ -58,16 +44,40 @@ body {
   font-size: 22px;
   height: 40px;
   width: 40px;
-}
-
-.fa-moon {
   background-color: var(--accent-two);
   color: var(--light-color-one);
+}
+
+body.dark .fa-regular {
+  background-color: var(--light-color-two);
+  color: var(--dark-color-one);
 }
 
 .hidden {
   display: none;
   /* pointer-events: none; */
+}
+
+.date-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: var(--dark-color-one);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.6;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+body.dark .date-container {
+  color: var(--light-color-two);
+}
+
+.date-container small {
+  font-size: 24px;
 }
 
 .clock-container {
@@ -84,6 +94,10 @@ body {
   margin-bottom: 20px;
 }
 
+body.dark .clock-container {
+  background-color: var(--dark-color-two);
+}
+
 .pm-am {
   color: var(--accent-two);
   font-size: 22px;
@@ -91,6 +105,10 @@ body {
   position: absolute;
   right: 40px;
   top: 80px;
+}
+
+body.dark .pm-am {
+  color: var(--accent-one);
 }
 
 .clock-digits {
@@ -114,6 +132,14 @@ body {
   color: var(--dark-color-two);
   font-size: 16px;
   font-weight: 500;
+}
+
+body.dark .clock-digits p {
+  color: var(--light-color-two);
+}
+
+body.dark .clock-digits small {
+  color: var(--light-color-two);
 }
 
 .colon {
